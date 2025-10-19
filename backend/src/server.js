@@ -12,8 +12,9 @@ app.use(express.json())
 app.use(rateLimiter)
 app.use("/api/notes", notesRoute)
 
-connectDB();
-
-app.listen(5000,() =>{
+connectDB().then(()=>{
+    app.listen(5000,() =>{
     console.log("server is running on port 5000")
 })
+});
+
