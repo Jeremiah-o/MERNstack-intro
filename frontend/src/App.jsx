@@ -7,8 +7,7 @@ import NoteDetailPage from "./pages/NoteDetailPage"
 
 const App = () => {
   return (
-    <div>
-      <button onClick={()=> toast.success("Congrats")} className="text-red-500 p-4">Click me</button>
+    <div data-theme="forest">
       <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/Create" element={<CreatePage/>} />
