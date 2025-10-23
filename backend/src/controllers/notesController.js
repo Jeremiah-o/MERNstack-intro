@@ -1,4 +1,4 @@
-import Note from "../../models/note.js"
+import Note from "../models/note.js"
 
 export async function getAllNotes(req,res){
     try {
